@@ -56,7 +56,5 @@ I opened the Windows VM and:
 File Integrity Monitoring detects unauthorized changes for example, ransomwares, backdoors and all those kind of stuffs as they happen, and failed-login alerts flag credential‑spraying attempt or probably a brute forcing taking place in either case it helps, so you can respond fast.
 
 
-
-```
-❤️ By Baruch (and few cups of coffee ☕)
-```
+<br> 
+<div align="center"><strong>🤍 Baruch (and few cups of coffee ☕)</strong></div>
