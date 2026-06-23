@@ -1,6 +1,6 @@
 # Wazuh Lab: Monitoring a Windows VM
 
-> A hands-on Security Monitoring lab using Wazuh SIEM — deployed on VirtualBox with Kali Linux (manager) and Windows 11 (agent).
+> A hands-on Security Monitoring lab using Wazuh SIEM, deployed on VirtualBox with Kali Linux (manager) and Windows 11 (agent).
 
 **Full write-up with detailed screenshots:** [View the Lab Report PDF](./wazuh-lab-report.pdf)
 
@@ -67,7 +67,7 @@ It works by installing a lightweight **agent** on monitored systems (e.g., Windo
 
 An attacker repeatedly attempts to log into a system using many different passwords (or commonly used passwords across many accounts) to gain unauthorized access.
 
-**Windows Event ID `4625`** — Failed logon — is the primary indicator of such activity. Monitoring these failures in real time allows defenders to detect and block the attack early.
+**Windows Event ID `4625`**(Failed logon): is the primary indicator of such activity. Monitoring these failures in real time allows defenders to detect and block the attack early.
 
 </details>
 
@@ -105,7 +105,7 @@ By alerting on any modification, creation, or deletion, FIM helps identify ranso
 
   ![New VM Dialog](./screenshots/vm-new-dialog.png)
 
-- **Step 2:** Filled in the required details — VM Name, VM Folder (left as default), and ISO Image path (Windows ISO downloaded from the official Microsoft website)
+- **Step 2:** Filled in the required details: VM Name, VM Folder (left as default), and ISO Image path (Windows ISO downloaded from the official Microsoft website)
 
   ![VM Details Form](./screenshots/vm-details-form.png)
 
@@ -179,7 +179,7 @@ By alerting on any modification, creation, or deletion, FIM helps identify ranso
    ![Generated PowerShell Command](./screenshots/wazuh-powershell-command.png)
 
 4. Booted into the Windows VM and opened **PowerShell as Administrator**
-5. Pasted and ran the copied PowerShell command — this installs the Wazuh agent on the Windows endpoint
+5. Pasted and ran the copied PowerShell command: this installs the Wazuh agent on the Windows endpoint
 
    ![PowerShell Agent Install](./screenshots/windows-agent-install.png)
 
@@ -204,7 +204,7 @@ By alerting on any modification, creation, or deletion, FIM helps identify ranso
    C:\Program Files (x86)\ossec-agent
    ```
 
-2. Located the `ossec.conf` file — this stores configuration, connection details, rules, and other agent settings
+2. Located the `ossec.conf` file, this stores configuration, connection details, rules, and other agent settings
 
 3. Opened `ossec.conf` in **Notepad as Administrator**
 
@@ -275,11 +275,11 @@ By alerting on any modification, creation, or deletion, FIM helps identify ranso
 
    ![Adding Event Filter](./screenshots/wazuh-filter-4625.png)
 
-4. Clicked **"Save"** — Wazuh filtered and displayed all matching failed login events
+4. Clicked **"Save"**, Wazuh filtered and displayed all matching failed login events
 
    ![Filtered Login Failures](./screenshots/wazuh-4625-results.png)
 
-5. Clicked the magnifying glass icon on a result to expand details — this revealed the **username**, **userID**, **operating system**, and more
+5. Clicked the magnifying glass icon on a result to expand details, this revealed the **username**, **userID**, **operating system**, and more
 
    ![Event Detail Icon](./screenshots/wazuh-4625-mag.png)
    ![Event Detail Expanded](./screenshots/wazuh-4625-detail.png)
@@ -318,6 +318,6 @@ By alerting on any modification, creation, or deletion, FIM helps identify ranso
 
 ## Conclusion
 
-- **From Setup to Action** — Built a full Wazuh SIEM lab using two VMs, proving that enterprise-grade security monitoring is accessible on a laptop
-- **Proactive Detection** — Used FIM to spot ransomware-like file modifications in real time and Windows event analysis to detect brute-force attempts
-- **Hands-on Validation** — Simulated real-world attacks with scripts and used the Wazuh dashboard to verify detection
+- **From Setup to Action**: Built a full Wazuh SIEM lab using two VMs, proving that enterprise-grade security monitoring is accessible on a laptop
+- **Proactive Detection**: Used FIM to spot ransomware-like file modifications in real time and Windows event analysis to detect brute-force attempts
+- **Hands-on Validation**: Simulated real-world attacks with scripts and used the Wazuh dashboard to verify detection
