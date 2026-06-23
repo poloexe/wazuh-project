@@ -2,7 +2,7 @@
 
 > A hands-on Security Monitoring lab using Wazuh SIEM, deployed on VirtualBox with Kali Linux (manager) and Windows 11 (agent).
 
-**Full write-up with detailed screenshots:** [View the Lab Report PDF](./wazuh-lab-report.pdf)
+**Full write-up with detailed screenshots:** [View the Lab Report PDF](./docs/wazuh-doc.pdf)
 
 
 ## Table of Contents
